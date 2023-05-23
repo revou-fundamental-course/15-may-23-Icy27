@@ -1,28 +1,30 @@
 body{
     margin:0px;
-    background-color: rgb(173, 173, 173);
+    background-color: #dad7d7;
 }
+
 header{
     display:flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(78, 173, 232);
+    background-color: #82B7DC;
 }
 
 h1{
-    color: white;
+    color: #ECF4FE;
 }
 
 header span{
-    color: rgb(140, 140, 140);
+    color: #808080;
 }
 
 section{
     display:flex;
     flex-direction: column;
-    margin: 20px 10px 5px 5px;
     background-color: white;
-
+    padding: 30px;
+    width: 100%;
+    margin: 20px;
 }
 
 .main,.persegi p, .container_icon{
@@ -32,7 +34,7 @@ section{
 
 
 .persegi{
-    background-color: rgba(36, 116, 255, 0.897);
+    background-color: #3466AA;
     color: white;
 }
 
@@ -40,15 +42,21 @@ section{
 .luas, .keliling{
     display: flex;
     flex-direction: column;
-    padding-top: 20px;
-    
+    margin-top: 20px;
+    border: 1px solid #114084;
+}
+
+.luas_content,.keliling_content{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
 
 
 .title{
     display: flex;
     justify-content: center;
-    background-color: rgba(36, 116, 255, 0.897);
+    background-color: #114084;
     
 }
 
@@ -81,12 +89,15 @@ section{
 .perhitungan_luas, .perhitungan_keliling{
     display: flex;
     flex-direction: column;
+    border-top: 1px solid #808080;
+    padding: 0px 20px 0px 20px;
 }
 
 input{
     flex-grow: 1;
     height: 30px;
-    margin: 10px;
+    border: 1px solid #114084;
+    border-radius: 3px;
 }
 
 button{
@@ -94,12 +105,12 @@ button{
     height: 30px;
     color: white;
     border:0;
-    border-radius: 5%;
+    border-radius: 3px;
 }
 
 .hitung{
     margin: 10px;
-    background-color: blue;
+    background-color: #114084;
     align-self: center;
 }
 
@@ -115,3 +126,16 @@ button{
     color: black;
 }
 
+.katik_content{
+    display: flex;
+}
+
+@media only screen and (max-width:768px) {
+    .katik_content{
+        flex-direction: column;
+    }
+    section{
+        width: auto;
+        
+    }
+}
