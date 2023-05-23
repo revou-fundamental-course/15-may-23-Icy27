@@ -1,0 +1,141 @@
+body {
+  margin: 0px;
+  background-color: #dad7d7;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #82b7dc;
+}
+
+h1 {
+  color: #ecf4fe;
+}
+
+header span {
+  color: #808080;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 30px;
+  width: 100%;
+  margin: 20px;
+}
+
+.main,
+.persegi p,
+.container_icon {
+  text-align: center;
+  align-self: center;
+}
+
+.persegi {
+  background-color: #3466aa;
+  color: white;
+}
+
+.luas,
+.keliling {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  border: 1px solid #114084;
+}
+
+.luas_content,
+.keliling_content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  background-color: #114084;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container_icon {
+  font-weight: bold;
+}
+
+.top,
+.bottom {
+  display: flex;
+  justify-content: space-around;
+  width: 280px;
+}
+
+.gambar {
+  border: 2px solid red;
+  height: 100px;
+  width: 100px;
+}
+
+.formula {
+  align-self: center;
+}
+
+.perhitungan_luas,
+.perhitungan_keliling {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #808080;
+  padding: 0px 20px 0px 20px;
+}
+
+input {
+  flex-grow: 1;
+  height: 30px;
+  border: 1px solid #114084;
+  border-radius: 3px;
+}
+
+button {
+  width: 80px;
+  height: 30px;
+  color: white;
+  border: 0;
+  border-radius: 3px;
+}
+
+.hitung {
+  margin: 10px;
+  background-color: #114084;
+  align-self: center;
+}
+
+.reset {
+  background-color: orange;
+  align-self: flex-end;
+  margin: 10px;
+}
+
+.perhitungan_luas h1,
+.perhitungan_keliling h1 {
+  color: black;
+}
+
+.katik_content {
+  display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  .katik_content {
+    flex-direction: column;
+  }
+  section {
+    width: auto;
+  }
+}
